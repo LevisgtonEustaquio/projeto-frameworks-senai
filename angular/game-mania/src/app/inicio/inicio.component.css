@@ -50,6 +50,10 @@ div.description h1{
     
 }
 
+h1{
+    font-size: 36px;
+}
+
 .containerDestaques{
     display: flex;
     flex-wrap: wrap;
