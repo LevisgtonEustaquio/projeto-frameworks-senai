@@ -1,0 +1,62 @@
+#section-login{
+    margin-top: 100px;
+    color: white;
+}
+
+#section-login h1{
+    text-align: center;
+    color: white;
+}
+
+#section-login input{
+    width: 100%;
+}
+
+#bt-login.btn.btn-primary{
+    background-color: black;
+    border: 1px solid rgb(3, 124, 3);
+}
+
+#bt-login.btn.btn-primary:hover{
+    background-color: rgb(3, 124, 3);
+    border: 1px solid lightgray;
+}
+/*cadastro*/
+
+#section-cadastro{
+    color: white;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#form-cadastrar{
+    padding: 50px;
+    display: none;
+}
+
+.btn.btn-info{
+    background-color: rgb(3, 124, 3);
+    border: 1px solid lightgray;
+    color: white;
+}
+
+.btn.btn-info:hover{
+    background-color: rgb(0, 161, 0);
+    border: 1px solid lightgray;
+    color: white;
+}
+
+#bt-cadastrar{
+    background-color: black;
+    border: 1px solid rgb(3, 124, 3);
+}
+
+#bt-cadastrar:hover{
+    background-color: rgb(3, 124, 3);
+    border: 1px solid lightgray;
+}
+
+#login input{
+    border: 1px solid rgb(0, 161, 0);
+}

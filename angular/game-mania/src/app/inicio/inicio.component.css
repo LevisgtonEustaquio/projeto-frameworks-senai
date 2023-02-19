@@ -1,0 +1,136 @@
+/* Estilo do banner e descrição*/
+
+main{
+    min-height: 500px;
+    background-color: rgb(32, 29, 29);
+}
+
+#containerBanner{
+    display: flex;
+    background: radial-gradient(
+        circle at 0% 100%,
+        #11630673 4%,
+        #087904e5 30%,
+        #11ad0ce5 62%,
+        #2fe629e5 85%,
+        #32cf02
+    );
+    padding: 40px 20px;
+}
+
+div#carouselExampleCaptions img{
+    height: 500px;
+}
+
+.carousel-inner{
+    border-radius: 20px;
+    box-shadow: 2px 6px 8px 0 rgb(32, 29, 29);
+}
+
+div.description{
+    width: 35%;
+    height: 100%;
+    font-size: 18px;
+    text-align: justify;
+    color: white;
+}
+
+div.description h1{
+    margin-bottom: 30px;
+}
+
+/* estilo dos produtos */
+
+#produtosDestaques{
+    margin-top: 50px;
+}
+
+#produtosDestaques h1{
+    color: white;
+    
+}
+
+.containerDestaques{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.destaquesItem img{
+    height: 200px;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid lightgrey;
+}
+
+.produtoItem{
+    border-radius: 20px;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+}
+
+.destaquesItem{
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+
+.btns{
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    font-size: 12px;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+    
+}
+.btns button{
+    border: none;
+    background-color: rgb(32, 29, 29);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.btnCarrinho{
+    border-bottom-left-radius: 17px;
+}
+
+.btnView{
+    border-bottom-right-radius: 17px;
+}
+
+.btns button:hover{
+    color: rgb(3, 124, 3);
+}
+.destaquesItem:hover .btns{
+    bottom: 0;
+}
+
+.produtoTipo{
+    font-size: 13px;
+    opacity: 0.8;
+    color: lightgray;
+}
+
+.produtoNome{
+    transition: all 0.3s ease-in-out;
+    opacity: 0.3;
+}
+
+a.produtoNome{
+    color: lightgray;
+}
+
+.produtoNome:hover{
+    color: rgb(3, 124, 3)!important;
+    opacity: 1;
+}
+
+.produtoPreco{
+    color: rgb(3, 124, 3);
+}

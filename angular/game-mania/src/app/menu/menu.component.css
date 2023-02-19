@@ -1,0 +1,63 @@
+.navbar {
+    background-color: rgb(32, 29, 29);
+    height: auto;
+}
+
+.navIcon:hover{
+    background-color: transparent!important;
+
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.example-button-row a {
+    color: white;
+}
+
+.example-button-row a:hover {
+    background: radial-gradient(circle at 0% 100%,
+            #11630673 4%,
+            #087904e5 30%,
+            #11ad0ce5 62%,
+            #2fe629e5 85%,
+            #32cf02);
+    border-radius: 50px;
+}
+
+.example-button-row button {
+    color: white;
+}
+
+.example-button-row button:hover {
+    background: radial-gradient(circle at 0% 100%,
+            #11630673 4%,
+            #087904e5 30%,
+            #11ad0ce5 62%,
+            #2fe629e5 85%,
+            #32cf02);
+    border-radius: 50px;
+}
+
+.example-button-row mat-menu button {
+    background-color: aqua;
+}
+
+
+
+span {
+    padding: 5px;
+}
+
+img {
+    width: 90px;
+    height: 70px;
+}
+
+a {
+    text-decoration: none;
+    text-decoration-color: none;
+}
+
+/*rgb(3, 124, 3)*/

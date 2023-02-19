@@ -1,0 +1,20 @@
+<mat-toolbar class="navbar">
+    
+    <a class="navIcon" routerLink="inicio"><img src="./assets/img/Logo4.png" alt="logo"></a>
+
+    <span class="example-spacer"></span>
+
+    <section>
+        <div class="example-button-row">
+            <a mat-button routerLink="inicio">Console</a>
+            <a mat-button routerLink="inicio">Jogos</a>
+            <a mat-button routerLink="inicio">Promoções</a>
+            <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>Carrinho</button>
+                <button mat-menu-item routerLink="login">Login</button>
+            </mat-menu>
+        </div>
+    </section>
+
+</mat-toolbar>
