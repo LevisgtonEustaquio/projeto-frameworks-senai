@@ -1,0 +1,11 @@
+#voltar-topo {
+    position: fixed;
+    bottom: 5px;
+    right: 50px;
+    border: 1px solid rgb(3, 124, 3);
+    color: rgb(3, 124, 3);
+}
+
+#voltar-topo:hover {
+    background-color: lightgray;
+}
