@@ -10,9 +10,9 @@
             <a mat-button routerLink="inicio">Jogos</a>
             <a mat-button routerLink="inicio">Promoções</a>
             <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-            <mat-menu #menu="matMenu">
-                <button mat-menu-item >Carrinho</button>
-                <button mat-menu-item routerLink="login">Login</button>
+            <mat-menu #menu="matMenu" class="custom">
+                <button mat-menu-item class="customBtn">Carrinho</button>
+                <button mat-menu-item class="customBtn" routerLink="login">Login</button>
             </mat-menu>
         </div>
     </section>

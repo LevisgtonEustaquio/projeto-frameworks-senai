@@ -40,7 +40,13 @@
     border-radius: 50px;
 }
 
+::ng-deep .custom{
+    background-color: red;
+}
 
+.customBtn span{
+    color: white;
+}
 
 span {
     padding: 5px;
