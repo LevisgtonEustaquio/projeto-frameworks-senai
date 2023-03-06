@@ -1,0 +1,57 @@
+.toolbar{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid lightgreen;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.example-button-row a {
+    color: black;
+    font-size: 20px;
+}
+
+.example-button-row a:hover {
+    background: radial-gradient(circle at 0% 100%,
+            #11630673 4%,
+            #087904e5 30%,
+            #11ad0ce5 62%,
+            #2fe629e5 85%,
+            #32cf02);
+    border-radius: 50px;
+    color: white;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+span {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+button:hover{
+    background: radial-gradient(circle at 0% 100%,
+    #8b030373 4%,
+    #790404e5 30%,
+    #ad0c0ce5 62%,
+    #e62929e5 85%,
+    #cf0202);
+border-radius: 50px;
+color: white;
+}

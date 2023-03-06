@@ -5,16 +5,16 @@
 
         <mat-form-field appearance="fill">
             <mat-label>Usuário</mat-label>
-            <input matInput id="usuario" type="text" class="validate">
+            <input matInput id="usuario" type="text" name="usuario" [(ngModel)]="usuario" class="validate">
         </mat-form-field>
 
         <mat-form-field>
             <mat-label>Senha</mat-label>
-            <input matInput id="senha" type="password" class="validate">
+            <input matInput id="senha" type="password" name="senha" [(ngModel)]="senha" class="validate">
         </mat-form-field>
 
         <div class="btnLogin">
-            <button type="submit" class="btn">Entrar</button>
+            <button type="submit" class="btn" (click)="fazerLogin()">Entrar</button>
           </div>
     </section>
 

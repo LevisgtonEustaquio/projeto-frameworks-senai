@@ -1,0 +1,32 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "produto": "Need For Speed Underground 2",
+      "descricao": "Jogo",
+      "foto": "nfsu2.jpg",
+      "preco": 100
+    },
+    {
+      "id": 2,
+      "produto": "Need For Speed Carbon",
+      "descricao": "Jogo",
+      "foto": "nfscarbon.jpg",
+      "preco": 120
+    },
+    {
+      "id": 3,
+      "produto": "Playstation 5",
+      "descricao": "Console",
+      "foto": "ps5-console.jpg",
+      "preco": 5000
+    },
+    {
+      "id": 4,
+      "produto": "Xbox Series X",
+      "descricao": "Console",
+      "foto": "xboxX.jpg",
+      "preco": 4000
+    }
+  ]
+}

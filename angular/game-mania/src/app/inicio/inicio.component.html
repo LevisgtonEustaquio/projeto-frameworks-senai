@@ -82,11 +82,10 @@
         <h1 class="text-center"> Produtos em destaques</h1>
 
         <mat-grid-list cols="4" rowHeight="1:1">
-            <mat-grid-tile>
-
+            <mat-grid-tile *ngFor="let produto of produtos">
                 <div class="produtoItem" style="width: 18rem;">
                     <div class="destaquesItem">
-                        <img src="/assets/img/ps5-console.jpg" alt="Console playstation" class="img-fluid d-block mx-auto">
+                        <img src="/assets/img/{{produto.foto}}" alt="" class="img-fluid d-block mx-auto">
                         <div class="row btns w-100 mx-auto text-center">
                             <button type="button" class="btnCarrinho col-6 py-2">
                                 <i class="fa fa-cart-plus"></i> Adicionar ao carrinho
@@ -98,256 +97,16 @@
                     </div>
 
                     <div class="produto-info p-3">
-                        <span class="produtoTipo">Console</span>
-                        <a href="#" class="d-block text-decoration-none py-2 produtoNome">Playstation 5</a>
-                        <span class="produtoPreco"><b>R$</b> 5000,00</span>
-                    </div>
-
-                </div>
-
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <div class="produtoItem" style="width: 18rem;">
-                    <div class="destaquesItem">
-                        <img src="/assets/img/xboxX.jpg" alt="Console Xbox" class="img-fluid d-block mx-auto">
-                        <div class="row btns w-100 mx-auto text-center">
-                            <button type="button" class="btnCarrinho col-6 py-2">
-                                <i class="fa fa-cart-plus"></i> Adicionar ao carrinho
-                            </button>
-                            <button type="button" class="btnView col-6 py-2">
-                                <i class="fa fa-binoculars"></i> Visualizar
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="produto-info p-3">
-                        <span class="produtoTipo">Console</span>
-                        <a href="#" class="d-block text-decoration-none py-2 produtoNome">Xbox Series X</a>
-                        <span class="produtoPreco"><b>R$</b> 4000,00</span>
+                        <span class="produtoTipo">{{produto.descricao}}</span>
+                        <a href="#" class="d-block text-decoration-none py-2 produtoNome">
+                            {{produto.produto}}
+                        </a>
+                        <span class="produtoPreco">{{produto.preco | currency : 'BRL'}}</span>
                     </div>
 
                 </div>
             </mat-grid-tile>
-            <mat-grid-tile>
-                <div class="produtoItem" style="width: 18rem;">
-                    <div class="destaquesItem">
-                        <img src="/assets/img/joystick1.jpg" alt="Joystick dualsense" class="img-fluid d-block mx-auto">
-                        <div class="row btns w-100 mx-auto text-center">
-                            <button type="button" class="btnCarrinho col-6 py-2">
-                                <i class="fa fa-cart-plus"></i> Adicionar ao carrinho
-                            </button>
-                            <button type="button" class="btnView col-6 py-2">
-                                <i class="fa fa-binoculars"></i> Visualizar
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="produto-info p-3">
-                        <span class="produtoTipo">Acessórios</span>
-                        <a href="#" class="d-block text-decoration-none py-2 produtoNome">Joystick DualSense</a>
-                        <span class="produtoPreco"><b>R$</b> 400,00</span>
-                    </div>
-
-                </div>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <div class="produtoItem" style="width: 18rem;">
-                    <div class="destaquesItem">
-                        <img src="/assets/img/xboxS.jpg" alt="Console xbox" class="img-fluid d-block mx-auto">
-                        <div class="row btns w-100 mx-auto text-center">
-                            <button type="button" class="btnCarrinho col-6 py-2">
-                                <i class="fa fa-cart-plus"></i> Adicionar ao carrinho
-                            </button>
-                            <button type="button" class="btnView col-6 py-2">
-                                <i class="fa fa-binoculars"></i> Visualizar
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="produto-info p-3">
-                        <span class="produtoTipo">Console</span>
-                        <a href="#" class="d-block text-decoration-none py-2 produtoNome">Xbox Series S</a>
-                        <span class="produtoPreco"><b>R$</b> 2300,00</span>
-                    </div>
-
-                </div>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <div class="produtoItem" style="width: 18rem;">
-                    <div class="destaquesItem">
-                        <img src="/assets/img/periferico.jpg" alt="Teclado" class="img-fluid d-block mx-auto">
-                        <div class="row btns w-100 mx-auto text-center">
-                            <button type="button" class="btnCarrinho col-6 py-2">
-                                <i class="fa fa-cart-plus"></i> Adicionar ao carrinho
-                            </button>
-                            <button type="button" class="btnView col-6 py-2">
-                                <i class="fa fa-binoculars"></i> Visualizar
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="produto-info p-3">
-                        <span class="produtoTipo">PC</span>
-                        <a href="#" class="d-block text-decoration-none py-2 produtoNome">Teclado mecânico</a>
-                        <span class="produtoPreco"><b>R$</b> 300,00</span>
-                    </div>
-
-                </div>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <div class="produtoItem" style="width: 18rem;">
-                    <div class="destaquesItem">
-                        <img src="/assets/img/monitor1.jpg" alt="Monitor" class="img-fluid d-block mx-auto">
-                        <div class="row btns w-100 mx-auto text-center">
-                            <button type="button" class="btnCarrinho col-6 py-2">
-                                <i class="fa fa-cart-plus"></i> Adicionar ao carrinho
-                            </button>
-                            <button type="button" class="btnView col-6 py-2">
-                                <i class="fa fa-binoculars"></i> Visualizar
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="produto-info p-3">
-                        <span class="produtoTipo">PC</span>
-                        <a href="#" class="d-block text-decoration-none py-2 produtoNome">Monitor</a>
-                        <span class="produtoPreco"><b>R$</b> 1000,00</span>
-                    </div>
-
-                </div>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <div class="produtoItem" style="width: 18rem;">
-                    <div class="destaquesItem">
-                        <img src="/assets/img/placaMae.jpg" alt="Placa mãe" class="img-fluid d-block mx-auto">
-                        <div class="row btns w-100 mx-auto text-center">
-                            <button type="button" class="btnCarrinho col-6 py-2">
-                                <i class="fa fa-cart-plus"></i> Adicionar ao carrinho
-                            </button>
-                            <button type="button" class="btnView col-6 py-2">
-                                <i class="fa fa-binoculars"></i> Visualizar
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="produto-info p-3">
-                        <span class="produtoTipo">PC</span>
-                        <a href="#" class="d-block text-decoration-none py-2 produtoNome">Placa Mãe</a>
-                        <span class="produtoPreco"><b>R$</b> 800,00</span>
-                    </div>
-
-                </div>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <div class="produtoItem" style="width: 18rem;">
-                    <div class="destaquesItem">
-                        <img src="/assets/img/forzaHorizon6.jpg" alt="Jogo" class="img-fluid d-block mx-auto">
-                        <div class="row btns w-100 mx-auto text-center">
-                            <button type="button" class="btnCarrinho col-6 py-2">
-                                <i class="fa fa-cart-plus"></i> Adicionar ao carrinho
-                            </button>
-                            <button type="button" class="btnView col-6 py-2">
-                                <i class="fa fa-binoculars"></i> Visualizar
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="produto-info p-3">
-                        <span class="produtoTipo">Jogos</span>
-                        <a href="#" class="d-block text-decoration-none py-2 produtoNome">Forza Horizon 6</a>
-                        <span class="produtoPreco"><b>R$</b> 180,00</span>
-                    </div>
-
-                </div>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <div class="produtoItem" style="width: 18rem;">
-                    <div class="destaquesItem">
-                        <img src="/assets/img/gabinete1.jpg" alt="" class="img-fluid d-block mx-auto">
-                        <div class="row btns w-100 mx-auto text-center">
-                            <button type="button" class="btnCarrinho col-6 py-2">
-                                <i class="fa fa-cart-plus"></i> Adicionar ao carrinho
-                            </button>
-                            <button type="button" class="btnView col-6 py-2">
-                                <i class="fa fa-binoculars"></i> Visualizar
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="produto-info p-3">
-                        <span class="produtoTipo">PC</span>
-                        <a href="#" class="d-block text-decoration-none py-2 produtoNome">Gabinete</a>
-                        <span class="produtoPreco"><b>R$</b> 300,00</span>
-                    </div>
-
-                </div>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <div class="produtoItem" style="width: 18rem;">
-                    <div class="destaquesItem">
-                        <img src="/assets/img/cadeira1.jpg" alt="" class="img-fluid d-block mx-auto">
-                        <div class="row btns w-100 mx-auto text-center">
-                            <button type="button" class="btnCarrinho col-6 py-2">
-                                <i class="fa fa-cart-plus"></i> Adicionar ao carrinho
-                            </button>
-                            <button type="button" class="btnView col-6 py-2">
-                                <i class="fa fa-binoculars"></i> Visualizar
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="produto-info p-3">
-                        <span class="produtoTipo">Movéis</span>
-                        <a href="#" class="d-block text-decoration-none py-2 produtoNome">Cadeira Gamer</a>
-                        <span class="produtoPreco"><b>R$</b> 700,00</span>
-                    </div>
-
-                </div>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <div class="produtoItem" style="width: 18rem;">
-                    <div class="destaquesItem">
-                        <img src="/assets/img/gow.png" alt="God of War" class="img-fluid d-block mx-auto">
-                        <div class="row btns w-100 mx-auto text-center">
-                            <button type="button" class="btnCarrinho col-6 py-2">
-                                <i class="fa fa-cart-plus"></i> Adicionar ao carrinho
-                            </button>
-                            <button type="button" class="btnView col-6 py-2">
-                                <i class="fa fa-binoculars"></i> Visualizar
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="produto-info p-3">
-                        <span class="produtoTipo">Jogos</span>
-                        <a href="#" class="d-block text-decoration-none py-2 produtoNome">God of War</a>
-                        <span class="produtoPreco"><b>R$</b> 60,00</span>
-                    </div>
-
-                </div>
-            </mat-grid-tile>
-            <mat-grid-tile>
-                <div class="produtoItem" style="width: 18rem;">
-                    <div class="destaquesItem">
-                        <img src="/assets/img/gow2.png" alt="God of War dois" class="img-fluid d-block mx-auto">
-                        <div class="row btns w-100 mx-auto text-center">
-                            <button type="button" class="btnCarrinho col-6 py-2">
-                                <i class="fa fa-cart-plus"></i> Adicionar ao carrinho
-                            </button>
-                            <button type="button" class="btnView col-6 py-2">
-                                <i class="fa fa-binoculars"></i> Visualizar
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="produto-info p-3">
-                        <span class="produtoTipo">Jogos</span>
-                        <a href="#" class="d-block text-decoration-none py-2 produtoNome">God of War II</a>
-                        <span class="produtoPreco"><b>R$</b> 60,00</span>
-                    </div>
-
-                </div>
-            </mat-grid-tile>
+            
         </mat-grid-list>
 
     </section>
